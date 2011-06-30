@@ -58,6 +58,7 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <value key="QtVersionId" type="int">0</value>
    <value key="ToolChain" type="int">0</value>
+   <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">2</value>
   </valuemap>
  </data>
@@ -66,6 +67,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
    <value key="QtVersionId" type="int">0</value>
+   <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">0</value>
   </valuemap>
  </data>
@@ -74,38 +76,38 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-l5oWemSFle,guid=496cf011298cc9e8fe8ed4ad000433f7</value>
-    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BuVWeIpimn,guid=185cbd135d0e9a32136d5b6e00045730</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
-    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDMSESSION=default</value>
     <value type="QString">GDM_KEYBOARD_LAYOUT=us	euro</value>
     <value type="QString">GDM_LANG=en_GB.UTF-8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-d5aC8D</value>
-    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-ycD0Fi/S.gpg-agent:9796:1</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-4D7Hcd</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-a4GA8C/S.gpg-agent:11370:1</value>
     <value type="QString">GTK_MODULES=canberra-gtk-module</value>
-    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/afs/rrz/usr/smail/26/pscholz0/.gtkrc-1.2-gnome2</value>
-    <value type="QString">HOME=/afs/rrz/usr/smail/26/pscholz0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/afs/rrz/usr/smail/80/barekzam/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/afs/rrz/usr/smail/80/barekzam</value>
     <value type="QString">LANG=en_GB.UTF-8</value>
     <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator</value>
-    <value type="QString">LOGNAME=pscholz0</value>
-    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-pscholz0</value>
+    <value type="QString">LOGNAME=barekzam</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-barekzam</value>
     <value type="QString">PATH=/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games</value>
-    <value type="QString">PWD=/afs/rrz.uni-koeln.de/usr/smail/26/pscholz0</value>
+    <value type="QString">PWD=/afs/rrz.uni-koeln.de/usr/smail/80/barekzam</value>
     <value type="QString">QTDIR=/usr/share/qt4</value>
-    <value type="QString">SESSION_MANAGER=local/cip1:@/tmp/.ICE-unix/9746,unix/cip1:/tmp/.ICE-unix/9746</value>
+    <value type="QString">SESSION_MANAGER=local/cip1:@/tmp/.ICE-unix/11320,unix/cip1:/tmp/.ICE-unix/11320</value>
     <value type="QString">SHELL=/vol/gnu/bin/bash</value>
-    <value type="QString">SSH_AGENT_PID=9782</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-d5aC8D/ssh</value>
-    <value type="QString">USER=pscholz0</value>
-    <value type="QString">USERNAME=pscholz0</value>
-    <value type="QString">WINDOWPATH=9</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-pscholz0-bEtTWL/database</value>
+    <value type="QString">SSH_AGENT_PID=11356</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-4D7Hcd/ssh</value>
+    <value type="QString">USER=barekzam</value>
+    <value type="QString">USERNAME=barekzam</value>
+    <value type="QString">WINDOWPATH=8</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-barekzam-OU0z3Y/database</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/share/gdm/:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=34a981e9b1f5106dccfe6aa100000008-1309434717.923708-1061804478</value>
+    <value type="QString">XDG_SESSION_COOKIE=34a981e9b1f5106dccfe6aa100000008-1309443734.619854-663987927</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">/afs/rrz.uni-koeln.de/usr/smail/26/pscholz0/Qt/Schachuhr/Schachuhr.pro</value>
+    <value type="QString">/afs/rrz.uni-koeln.de/usr/smail/80/barekzam/asep/qt/projects/balabub-ChessClock/Schachuhr.pro</value>
     <value type="QString">-spec</value>
     <value type="QString">linux-g++</value>
     <value type="QString">-r</value>
@@ -113,7 +115,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/qmake-qt4</value>
    <value key="abstractProcess.enabled" type="bool">false</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/afs/rrz.uni-koeln.de/usr/smail/26/pscholz0/Qt/Schachuhr</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/afs/rrz.uni-koeln.de/usr/smail/80/barekzam/asep/qt/projects/balabub-ChessClock</value>
   </valuemap>
  </data>
  <data>
@@ -121,35 +123,35 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-l5oWemSFle,guid=496cf011298cc9e8fe8ed4ad000433f7</value>
-    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BuVWeIpimn,guid=185cbd135d0e9a32136d5b6e00045730</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
-    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDMSESSION=default</value>
     <value type="QString">GDM_KEYBOARD_LAYOUT=us	euro</value>
     <value type="QString">GDM_LANG=en_GB.UTF-8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-d5aC8D</value>
-    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-ycD0Fi/S.gpg-agent:9796:1</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-4D7Hcd</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-a4GA8C/S.gpg-agent:11370:1</value>
     <value type="QString">GTK_MODULES=canberra-gtk-module</value>
-    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/afs/rrz/usr/smail/26/pscholz0/.gtkrc-1.2-gnome2</value>
-    <value type="QString">HOME=/afs/rrz/usr/smail/26/pscholz0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/afs/rrz/usr/smail/80/barekzam/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/afs/rrz/usr/smail/80/barekzam</value>
     <value type="QString">LANG=en_GB.UTF-8</value>
     <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator</value>
-    <value type="QString">LOGNAME=pscholz0</value>
-    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-pscholz0</value>
+    <value type="QString">LOGNAME=barekzam</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-barekzam</value>
     <value type="QString">PATH=/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games</value>
-    <value type="QString">PWD=/afs/rrz.uni-koeln.de/usr/smail/26/pscholz0</value>
+    <value type="QString">PWD=/afs/rrz.uni-koeln.de/usr/smail/80/barekzam</value>
     <value type="QString">QTDIR=/usr/share/qt4</value>
-    <value type="QString">SESSION_MANAGER=local/cip1:@/tmp/.ICE-unix/9746,unix/cip1:/tmp/.ICE-unix/9746</value>
+    <value type="QString">SESSION_MANAGER=local/cip1:@/tmp/.ICE-unix/11320,unix/cip1:/tmp/.ICE-unix/11320</value>
     <value type="QString">SHELL=/vol/gnu/bin/bash</value>
-    <value type="QString">SSH_AGENT_PID=9782</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-d5aC8D/ssh</value>
-    <value type="QString">USER=pscholz0</value>
-    <value type="QString">USERNAME=pscholz0</value>
-    <value type="QString">WINDOWPATH=9</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-pscholz0-bEtTWL/database</value>
+    <value type="QString">SSH_AGENT_PID=11356</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-4D7Hcd/ssh</value>
+    <value type="QString">USER=barekzam</value>
+    <value type="QString">USERNAME=barekzam</value>
+    <value type="QString">WINDOWPATH=8</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-barekzam-OU0z3Y/database</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/share/gdm/:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=34a981e9b1f5106dccfe6aa100000008-1309434717.923708-1061804478</value>
+    <value type="QString">XDG_SESSION_COOKIE=34a981e9b1f5106dccfe6aa100000008-1309443734.619854-663987927</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
@@ -157,7 +159,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/afs/rrz.uni-koeln.de/usr/smail/26/pscholz0/Qt/Schachuhr</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/afs/rrz.uni-koeln.de/usr/smail/80/barekzam/asep/qt/projects/balabub-ChessClock</value>
   </valuemap>
  </data>
  <data>

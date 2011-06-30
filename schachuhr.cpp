@@ -51,3 +51,8 @@ void Schachuhr::on_stopButton_clicked()
 {
 
 }
+
+void Schachuhr::timefunction(timestruct *)
+{
+
+}

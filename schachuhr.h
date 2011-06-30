@@ -18,6 +18,15 @@ protected:
 
 private:
     Ui::Schachuhr *ui;
+    void timefunction(timestruct *);
+    struct timestruct{
+        int std;
+        int min;
+        int sec;
+        int msec;
+    }zeit;
+
+
 
 private slots:
     void on_stopButton_clicked();
@@ -25,6 +34,7 @@ private slots:
     void on_clearButton_clicked();
     void on_player2Button_clicked();
     void on_player1Button_clicked();
+
 };
 
 #endif // SCHACHUHR_H
