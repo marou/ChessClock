@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'schachuhr.ui'
 **
-** Created: Thu Jun 30 16:14:51 2011
+** Created: Thu Jun 30 16:31:47 2011
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -90,6 +90,8 @@ public:
         font.setBold(true);
         font.setWeight(75);
         labelplayer1->setFont(font);
+        labelplayer1->setLayoutDirection(Qt::LeftToRight);
+        labelplayer1->setAlignment(Qt::AlignCenter);
 
         verticalLayout->addWidget(labelplayer1);
 
@@ -131,6 +133,7 @@ public:
         labelplayer2 = new QLabel(layoutWidget);
         labelplayer2->setObjectName(QString::fromUtf8("labelplayer2"));
         labelplayer2->setFont(font);
+        labelplayer2->setAlignment(Qt::AlignCenter);
 
         verticalLayout_2->addWidget(labelplayer2);
 
