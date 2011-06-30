@@ -38,7 +38,8 @@ void Schachuhr::on_player2Button_clicked()
 
 void Schachuhr::on_clearButton_clicked()
 {
-
+    ui->ausgabe1->clear();
+    ui->ausgabe2->clear();
 }
 
 void Schachuhr::on_quitButton_clicked()

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'schachuhr.ui'
 **
-** Created: Thu Jun 30 15:11:47 2011
+** Created: Thu Jun 30 16:14:51 2011
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -31,7 +31,7 @@ class Ui_Schachuhr
 {
 public:
     QWidget *centralWidget;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout_3;
     QVBoxLayout *verticalLayout;
@@ -65,13 +65,13 @@ public:
     {
         if (Schachuhr->objectName().isEmpty())
             Schachuhr->setObjectName(QString::fromUtf8("Schachuhr"));
-        Schachuhr->resize(530, 409);
+        Schachuhr->resize(532, 408);
         centralWidget = new QWidget(Schachuhr);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(1, 1, 526, 402));
-        verticalLayout_4 = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(1, 1, 526, 402));
+        verticalLayout_4 = new QVBoxLayout(layoutWidget);
         verticalLayout_4->setSpacing(6);
         verticalLayout_4->setContentsMargins(11, 11, 11, 11);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
@@ -82,7 +82,7 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        labelplayer1 = new QLabel(widget);
+        labelplayer1 = new QLabel(layoutWidget);
         labelplayer1->setObjectName(QString::fromUtf8("labelplayer1"));
         QFont font;
         font.setFamily(QString::fromUtf8("DejaVu Sans"));
@@ -93,12 +93,12 @@ public:
 
         verticalLayout->addWidget(labelplayer1);
 
-        ausgabe1 = new QPlainTextEdit(widget);
+        ausgabe1 = new QPlainTextEdit(layoutWidget);
         ausgabe1->setObjectName(QString::fromUtf8("ausgabe1"));
 
         verticalLayout->addWidget(ausgabe1);
 
-        sumedit1 = new QLineEdit(widget);
+        sumedit1 = new QLineEdit(layoutWidget);
         sumedit1->setObjectName(QString::fromUtf8("sumedit1"));
 
         verticalLayout->addWidget(sumedit1);
@@ -110,7 +110,7 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer_2);
 
-        player1Button = new QPushButton(widget);
+        player1Button = new QPushButton(layoutWidget);
         player1Button->setObjectName(QString::fromUtf8("player1Button"));
 
         horizontalLayout->addWidget(player1Button);
@@ -128,18 +128,18 @@ public:
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        labelplayer2 = new QLabel(widget);
+        labelplayer2 = new QLabel(layoutWidget);
         labelplayer2->setObjectName(QString::fromUtf8("labelplayer2"));
         labelplayer2->setFont(font);
 
         verticalLayout_2->addWidget(labelplayer2);
 
-        ausgabe2 = new QPlainTextEdit(widget);
+        ausgabe2 = new QPlainTextEdit(layoutWidget);
         ausgabe2->setObjectName(QString::fromUtf8("ausgabe2"));
 
         verticalLayout_2->addWidget(ausgabe2);
 
-        sumedit2 = new QLineEdit(widget);
+        sumedit2 = new QLineEdit(layoutWidget);
         sumedit2->setObjectName(QString::fromUtf8("sumedit2"));
 
         verticalLayout_2->addWidget(sumedit2);
@@ -151,7 +151,7 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer_4);
 
-        player2Button = new QPushButton(widget);
+        player2Button = new QPushButton(layoutWidget);
         player2Button->setObjectName(QString::fromUtf8("player2Button"));
 
         horizontalLayout_2->addWidget(player2Button);
@@ -179,7 +179,7 @@ public:
 
         horizontalLayout_4->addItem(horizontalSpacer_6);
 
-        stopButton = new QPushButton(widget);
+        stopButton = new QPushButton(layoutWidget);
         stopButton->setObjectName(QString::fromUtf8("stopButton"));
 
         horizontalLayout_4->addWidget(stopButton);
@@ -198,12 +198,12 @@ public:
 
         horizontalLayout_5->addItem(horizontalSpacer_7);
 
-        clearButton = new QPushButton(widget);
+        clearButton = new QPushButton(layoutWidget);
         clearButton->setObjectName(QString::fromUtf8("clearButton"));
 
         horizontalLayout_5->addWidget(clearButton);
 
-        quitButton = new QPushButton(widget);
+        quitButton = new QPushButton(layoutWidget);
         quitButton->setObjectName(QString::fromUtf8("quitButton"));
 
         horizontalLayout_5->addWidget(quitButton);

@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>530</width>
-    <height>409</height>
+    <width>532</width>
+    <height>408</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Schachuhr</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>1</x>
@@ -168,9 +168,6 @@
             </size>
            </property>
           </spacer>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="lcdNumber"/>
          </item>
          <item>
           <widget class="QPushButton" name="stopButton">
