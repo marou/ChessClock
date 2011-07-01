@@ -29,6 +29,12 @@ void Schachuhr::changeEvent(QEvent *e)
 
 void Schachuhr::on_player1Button_clicked()
 {
+    if(!start)
+    {
+        init_summe(summe1);
+        init_summe(summe2);
+    }
+
     start=true;
     ui->player1Button->setDisabled(1);
     ui->player2Button->setEnabled(1);
@@ -45,6 +51,7 @@ void Schachuhr::on_player1Button_clicked()
 
     while(start)
     {
+        summenbildung(summe1, zeit);
         QString std, min, sec, msec;
 
         std.setNum(zeit[3]);
@@ -55,6 +62,14 @@ void Schachuhr::on_player1Button_clicked()
         eitlab=std + ":" + min + ":" + sec +  ":" + msec;
         ui->labelplayer1->setText(eitlab);
 
+        std.setNum(summe1[3]);
+        min.setNum(summe1[2]);
+        sec.setNum(summe1[1]);
+        msec.setNum(summe1[0]);
+
+        eitlab=std + ":" + min + ":" + sec +  ":" + msec;
+        ui->sumedit1->setText(eitlab);
+
         QTest::qWait(1);
         timefunction(zeit);
 
@@ -63,6 +78,12 @@ void Schachuhr::on_player1Button_clicked()
 
 void Schachuhr::on_player2Button_clicked()
 {
+    if(!start)
+    {
+        init_summe(summe1);
+        init_summe(summe2);
+    }
+
     start=true;
     ui->player2Button->setDisabled(1);
     ui->player1Button->setEnabled(1);
@@ -78,6 +99,7 @@ void Schachuhr::on_player2Button_clicked()
 
     while(start)
     {
+        summenbildung(summe2, zeit);
         QString std, min, sec, msec;
 
         std.setNum(zeit[3]);
@@ -88,6 +110,13 @@ void Schachuhr::on_player2Button_clicked()
         eitlab=std + ":" + min + ":" + sec +  ":" + msec;
         ui->labelplayer2->setText(eitlab);
 
+        std.setNum(summe2[3]);
+        min.setNum(summe2[2]);
+        sec.setNum(summe2[1]);
+        msec.setNum(summe2[0]);
+
+        eitlab=std + ":" + min + ":" + sec +  ":" + msec;
+        ui->sumedit2->setText(eitlab);
 
         QTest::qWait(1);
         timefunction(zeit);
@@ -154,5 +183,44 @@ void Schachuhr::timefunction(int *zeit)
     else
     {
         zeit[0]++;
+    }
+}
+
+void Schachuhr::init_summe(int *summe){
+    for(int i=0; i<4; i++){
+        summe[i]=0;
+    }
+}
+
+void Schachuhr::summenbildung(int *summe, int *zeit){
+
+    if(summe[0]==100)
+    {
+        summe[0]=zeit[0];
+        summe[1]++;
+    }
+    else
+    {
+        summe[0]+=zeit[0];
+    }
+
+    if(summe[1]==60)
+    {
+        summe[1]=zeit[1];
+        summe[2]++;
+    }
+    else
+    {
+        summe[1]+=zeit[1];
+    }
+
+    if(summe[2]==60)
+    {
+          summe[2]=zeit[2];
+          summe[3]++;
+    }
+    else
+    {
+        summe[2]+=zeit[2];
     }
 }

@@ -19,10 +19,15 @@ protected:
 private:
     Ui::Schachuhr *ui;
     void timefunction(int *zeit); //Inkrementiert die Zeit
+    void summenbildung(int *summe, int *zeit); //Soll die Summe bilden
+    void init_summe(int *summe); //Initialisiert die Summenarrays
+
     int zeit[4];    //Zeit
     int summe1[4]; //Zeitsumme von Spieler1
     int summe2[4]; //Zeitsumme von Spieler2
+
     bool start;    //BOOL zum Überprüfen ob die Schachuhr noch läuft
+
     QString eitlab; //String für die Zeitausgabe
 
 
