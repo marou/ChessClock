@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'schachuhr.ui'
 **
-** Created: Thu Jun 30 18:38:43 2011
-**      by: Qt User Interface Compiler version 4.6.3
+** Created: Fri Jul 1 09:02:23 2011
+**      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -20,6 +20,7 @@
 #include <QtGui/QMainWindow>
 #include <QtGui/QPlainTextEdit>
 #include <QtGui/QPushButton>
+#include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,66 +31,98 @@ public:
     QWidget *centralWidget;
     QPushButton *clearButton;
     QPushButton *quitButton;
-    QLabel *labelplayer2;
-    QPlainTextEdit *ausgabe2;
-    QLineEdit *sumedit2;
     QPushButton *stopButton;
     QPushButton *player2Button;
+    QPushButton *player1Button;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout;
     QLabel *labelplayer1;
     QPlainTextEdit *ausgabe1;
     QLineEdit *sumedit1;
-    QPushButton *player1Button;
+    QWidget *widget1;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *labelplayer2;
+    QPlainTextEdit *ausgabe2;
+    QLineEdit *sumedit2;
 
     void setupUi(QMainWindow *Schachuhr)
     {
         if (Schachuhr->objectName().isEmpty())
             Schachuhr->setObjectName(QString::fromUtf8("Schachuhr"));
-        Schachuhr->resize(699, 798);
+        Schachuhr->resize(677, 520);
         centralWidget = new QWidget(Schachuhr);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         clearButton = new QPushButton(centralWidget);
         clearButton->setObjectName(QString::fromUtf8("clearButton"));
-        clearButton->setGeometry(QRect(133, 413, 85, 27));
+        clearButton->setGeometry(QRect(300, 410, 85, 27));
         quitButton = new QPushButton(centralWidget);
         quitButton->setObjectName(QString::fromUtf8("quitButton"));
-        quitButton->setGeometry(QRect(224, 413, 85, 27));
-        labelplayer2 = new QLabel(centralWidget);
-        labelplayer2->setObjectName(QString::fromUtf8("labelplayer2"));
-        labelplayer2->setGeometry(QRect(353, 68, 133, 32));
+        quitButton->setGeometry(QRect(300, 450, 85, 27));
+        stopButton = new QPushButton(centralWidget);
+        stopButton->setObjectName(QString::fromUtf8("stopButton"));
+        stopButton->setGeometry(QRect(300, 380, 85, 27));
+        player2Button = new QPushButton(centralWidget);
+        player2Button->setObjectName(QString::fromUtf8("player2Button"));
+        player2Button->setGeometry(QRect(430, 340, 85, 27));
+        player1Button = new QPushButton(centralWidget);
+        player1Button->setObjectName(QString::fromUtf8("player1Button"));
+        player1Button->setGeometry(QRect(180, 340, 85, 27));
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(87, 68, 258, 265));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setSpacing(6);
+        verticalLayout->setContentsMargins(11, 11, 11, 11);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        labelplayer1 = new QLabel(widget);
+        labelplayer1->setObjectName(QString::fromUtf8("labelplayer1"));
         QFont font;
         font.setFamily(QString::fromUtf8("DejaVu Sans"));
         font.setPointSize(20);
         font.setBold(true);
         font.setWeight(75);
-        labelplayer2->setFont(font);
-        labelplayer2->setAlignment(Qt::AlignCenter);
-        ausgabe2 = new QPlainTextEdit(centralWidget);
-        ausgabe2->setObjectName(QString::fromUtf8("ausgabe2"));
-        ausgabe2->setGeometry(QRect(354, 107, 256, 192));
-        sumedit2 = new QLineEdit(centralWidget);
-        sumedit2->setObjectName(QString::fromUtf8("sumedit2"));
-        sumedit2->setGeometry(QRect(354, 305, 129, 27));
-        stopButton = new QPushButton(centralWidget);
-        stopButton->setObjectName(QString::fromUtf8("stopButton"));
-        stopButton->setGeometry(QRect(133, 378, 85, 27));
-        player2Button = new QPushButton(centralWidget);
-        player2Button->setObjectName(QString::fromUtf8("player2Button"));
-        player2Button->setGeometry(QRect(401, 339, 85, 27));
-        labelplayer1 = new QLabel(centralWidget);
-        labelplayer1->setObjectName(QString::fromUtf8("labelplayer1"));
-        labelplayer1->setGeometry(QRect(87, 68, 133, 32));
         labelplayer1->setFont(font);
         labelplayer1->setLayoutDirection(Qt::LeftToRight);
         labelplayer1->setAlignment(Qt::AlignCenter);
-        ausgabe1 = new QPlainTextEdit(centralWidget);
+
+        verticalLayout->addWidget(labelplayer1);
+
+        ausgabe1 = new QPlainTextEdit(widget);
         ausgabe1->setObjectName(QString::fromUtf8("ausgabe1"));
-        ausgabe1->setGeometry(QRect(88, 107, 256, 192));
-        sumedit1 = new QLineEdit(centralWidget);
+
+        verticalLayout->addWidget(ausgabe1);
+
+        sumedit1 = new QLineEdit(widget);
         sumedit1->setObjectName(QString::fromUtf8("sumedit1"));
-        sumedit1->setGeometry(QRect(88, 305, 129, 27));
-        player1Button = new QPushButton(centralWidget);
-        player1Button->setObjectName(QString::fromUtf8("player1Button"));
-        player1Button->setGeometry(QRect(135, 339, 85, 27));
+
+        verticalLayout->addWidget(sumedit1);
+
+        widget1 = new QWidget(centralWidget);
+        widget1->setObjectName(QString::fromUtf8("widget1"));
+        widget1->setGeometry(QRect(353, 68, 258, 265));
+        verticalLayout_2 = new QVBoxLayout(widget1);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        labelplayer2 = new QLabel(widget1);
+        labelplayer2->setObjectName(QString::fromUtf8("labelplayer2"));
+        labelplayer2->setFont(font);
+        labelplayer2->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_2->addWidget(labelplayer2);
+
+        ausgabe2 = new QPlainTextEdit(widget1);
+        ausgabe2->setObjectName(QString::fromUtf8("ausgabe2"));
+
+        verticalLayout_2->addWidget(ausgabe2);
+
+        sumedit2 = new QLineEdit(widget1);
+        sumedit2->setObjectName(QString::fromUtf8("sumedit2"));
+
+        verticalLayout_2->addWidget(sumedit2);
+
         Schachuhr->setCentralWidget(centralWidget);
 
         retranslateUi(Schachuhr);
@@ -102,11 +135,11 @@ public:
         Schachuhr->setWindowTitle(QApplication::translate("Schachuhr", "Schachuhr", 0, QApplication::UnicodeUTF8));
         clearButton->setText(QApplication::translate("Schachuhr", "Clear", 0, QApplication::UnicodeUTF8));
         quitButton->setText(QApplication::translate("Schachuhr", "Quit", 0, QApplication::UnicodeUTF8));
-        labelplayer2->setText(QApplication::translate("Schachuhr", "Spieler 2", 0, QApplication::UnicodeUTF8));
         stopButton->setText(QApplication::translate("Schachuhr", "Stop", 0, QApplication::UnicodeUTF8));
         player2Button->setText(QApplication::translate("Schachuhr", "Start/Stop", 0, QApplication::UnicodeUTF8));
-        labelplayer1->setText(QApplication::translate("Schachuhr", "Spieler 1", 0, QApplication::UnicodeUTF8));
         player1Button->setText(QApplication::translate("Schachuhr", "Start/Stop", 0, QApplication::UnicodeUTF8));
+        labelplayer1->setText(QApplication::translate("Schachuhr", "Spieler 1", 0, QApplication::UnicodeUTF8));
+        labelplayer2->setText(QApplication::translate("Schachuhr", "Spieler 2", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

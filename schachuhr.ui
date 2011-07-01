@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>699</width>
-    <height>798</height>
+    <width>677</width>
+    <height>520</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="clearButton">
     <property name="geometry">
      <rect>
-      <x>133</x>
-      <y>413</y>
+      <x>300</x>
+      <y>410</y>
       <width>85</width>
       <height>27</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="quitButton">
     <property name="geometry">
      <rect>
-      <x>224</x>
-      <y>413</y>
+      <x>300</x>
+      <y>450</y>
       <width>85</width>
       <height>27</height>
      </rect>
@@ -40,55 +40,11 @@
      <string>Quit</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelplayer2">
-    <property name="geometry">
-     <rect>
-      <x>353</x>
-      <y>68</y>
-      <width>133</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>20</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Spieler 2</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPlainTextEdit" name="ausgabe2">
-    <property name="geometry">
-     <rect>
-      <x>354</x>
-      <y>107</y>
-      <width>256</width>
-      <height>192</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="sumedit2">
-    <property name="geometry">
-     <rect>
-      <x>354</x>
-      <y>305</y>
-      <width>129</width>
-      <height>27</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="stopButton">
     <property name="geometry">
      <rect>
-      <x>133</x>
-      <y>378</y>
+      <x>300</x>
+      <y>380</y>
       <width>85</width>
       <height>27</height>
      </rect>
@@ -100,68 +56,21 @@
    <widget class="QPushButton" name="player2Button">
     <property name="geometry">
      <rect>
-      <x>401</x>
-      <y>339</y>
+      <x>430</x>
+      <y>340</y>
       <width>85</width>
       <height>27</height>
      </rect>
     </property>
     <property name="text">
      <string>Start/Stop</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelplayer1">
-    <property name="geometry">
-     <rect>
-      <x>87</x>
-      <y>68</y>
-      <width>133</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>20</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="text">
-     <string>Spieler 1</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPlainTextEdit" name="ausgabe1">
-    <property name="geometry">
-     <rect>
-      <x>88</x>
-      <y>107</y>
-      <width>256</width>
-      <height>192</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="sumedit1">
-    <property name="geometry">
-     <rect>
-      <x>88</x>
-      <y>305</y>
-      <width>129</width>
-      <height>27</height>
-     </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="player1Button">
     <property name="geometry">
      <rect>
-      <x>135</x>
-      <y>339</y>
+      <x>180</x>
+      <y>340</y>
       <width>85</width>
       <height>27</height>
      </rect>
@@ -169,6 +78,81 @@
     <property name="text">
      <string>Start/Stop</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>87</x>
+      <y>68</y>
+      <width>258</width>
+      <height>265</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="labelplayer1">
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Spieler 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="ausgabe1"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="sumedit1"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>353</x>
+      <y>68</y>
+      <width>258</width>
+      <height>265</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="labelplayer2">
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Spieler 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="ausgabe2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="sumedit2"/>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>

@@ -20,6 +20,8 @@ private:
     Ui::Schachuhr *ui;
     void timefunction(int *zeit);
     int zeit[4];
+    bool start;
+    QString eitlab;
 
 
 
