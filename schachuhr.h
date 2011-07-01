@@ -18,20 +18,22 @@ protected:
 
 private:
     Ui::Schachuhr *ui;
-    void timefunction(int *zeit);
-    int zeit[4];
-    bool start;
-    QString eitlab;
+    void timefunction(int *zeit); //Inkrementiert die Zeit
+    int zeit[4];    //Zeit
+    int summe1[4]; //Zeitsumme von Spieler1
+    int summe2[4]; //Zeitsumme von Spieler2
+    bool start;    //BOOL zum Überprüfen ob die Schachuhr noch läuft
+    QString eitlab; //String für die Zeitausgabe
 
 
 
 
 private slots:
-    void on_stopButton_clicked();
-    void on_quitButton_clicked();
-    void on_clearButton_clicked();
-    void on_player2Button_clicked();
-    void on_player1Button_clicked();
+    void on_stopButton_clicked(); //Stopt Schachuhr und gibt Summe aus
+    void on_quitButton_clicked(); //Soll das Fenster schließen und die Anwendung killen
+    void on_clearButton_clicked(); //Soll als Resetbutton dienen
+    void on_player2Button_clicked(); //Button von Spieler 2
+    void on_player1Button_clicked(); //Button von Spieler 1
 
 };
 
