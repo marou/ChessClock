@@ -13,6 +13,8 @@ public:
     Schachuhr(QWidget *parent = 0);
     ~Schachuhr();
 
+
+
 protected:
     void changeEvent(QEvent *e);
 
@@ -25,7 +27,7 @@ private:
     int zeit[4];    //Zeit
     int summe1[4]; //Zeitsumme von Spieler1
     int summe2[4]; //Zeitsumme von Spieler2
-    int intervall=1; //Intervall für das Warten
+    int zeitintervall; //Intervall für das Warten
 
     bool start;    //BOOL zum Überprüfen ob die Schachuhr noch läuft
 

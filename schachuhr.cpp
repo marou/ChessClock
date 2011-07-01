@@ -8,6 +8,7 @@ Schachuhr::Schachuhr(QWidget *parent) :
     ui(new Ui::Schachuhr)
 {
     ui->setupUi(this);
+    zeitintervall=1;
 }
 
 Schachuhr::~Schachuhr()
@@ -54,14 +55,6 @@ void Schachuhr::on_player1Button_clicked()
         summenbildung(summe1, zeit);
         QString std, min, sec, msec;
 
-        std.setNum(zeit[3]);
-        min.setNum(zeit[2]);
-        sec.setNum(zeit[1]);
-        msec.setNum(zeit[0]);
-
-        eitlab=std + ":" + min + ":" + sec +  ":" + msec;
-        ui->labelplayer1->setText(eitlab);
-
         std.setNum(summe1[3]);
         min.setNum(summe1[2]);
         sec.setNum(summe1[1]);
@@ -69,6 +62,14 @@ void Schachuhr::on_player1Button_clicked()
 
         eitlab=std + ":" + min + ":" + sec +  ":" + msec;
         ui->sumedit1->setText(eitlab);
+
+        std.setNum(zeit[3]);
+        min.setNum(zeit[2]);
+        sec.setNum(zeit[1]);
+        msec.setNum(zeit[0]);
+
+        eitlab=std + ":" + min + ":" + sec +  ":" + msec;
+        ui->labelplayer1->setText(eitlab);
 
         QTest::qWait(1);
         timefunction(zeit);
@@ -102,14 +103,6 @@ void Schachuhr::on_player2Button_clicked()
         summenbildung(summe2, zeit);
         QString std, min, sec, msec;
 
-        std.setNum(zeit[3]);
-        min.setNum(zeit[2]);
-        sec.setNum(zeit[1]);
-        msec.setNum(zeit[0]);
-
-        eitlab=std + ":" + min + ":" + sec +  ":" + msec;
-        ui->labelplayer2->setText(eitlab);
-
         std.setNum(summe2[3]);
         min.setNum(summe2[2]);
         sec.setNum(summe2[1]);
@@ -118,7 +111,15 @@ void Schachuhr::on_player2Button_clicked()
         eitlab=std + ":" + min + ":" + sec +  ":" + msec;
         ui->sumedit2->setText(eitlab);
 
-        QTest::qWait(1);
+        std.setNum(zeit[3]);
+        min.setNum(zeit[2]);
+        sec.setNum(zeit[1]);
+        msec.setNum(zeit[0]);
+
+        eitlab=std + ":" + min + ":" + sec +  ":" + msec;
+        ui->labelplayer2->setText(eitlab);
+
+        QTest::qWait(zeitintervall);
         timefunction(zeit);
     }
 }
@@ -132,7 +133,7 @@ void Schachuhr::on_clearButton_clicked()
 
 void Schachuhr::on_quitButton_clicked()
 {
-
+    close();
 }
 
 void Schachuhr::on_stopButton_clicked()
@@ -154,16 +155,22 @@ void Schachuhr::on_stopButton_clicked()
             ui->labelplayer1->setText("Spieler 1");
 
         }
+
         start=false;
-            ui->ausgabe1->insertPlainText("----------------");
-            ui->ausgabe2->insertPlainText("----------------");
+        ui->ausgabe1->insertPlainText("----------------");
+        ui->ausgabe2->insertPlainText("----------------");
+
+        ui->player1Button->setEnabled(1);
+        ui->player2Button->setEnabled(1);
+        ui->sumedit1->setText("");
+        ui->sumedit2->setText("");
 
     }
 }
 
 void Schachuhr::timefunction(int *zeit)
 {
-    if(zeit[0]==100)
+    if(zeit[0]==100*zeitintervall)
     {
         zeit[1]++;
         zeit[0]=0;
@@ -194,7 +201,7 @@ void Schachuhr::init_summe(int *summe){
 
 void Schachuhr::summenbildung(int *summe, int *zeit){
 
-    if(summe[0]==100)
+    if(summe[0]>=1000*zeitintervall)
     {
         summe[0]=zeit[0];
         summe[1]++;
@@ -204,7 +211,7 @@ void Schachuhr::summenbildung(int *summe, int *zeit){
         summe[0]+=zeit[0];
     }
 
-    if(summe[1]==60)
+    if(summe[1]>=60)
     {
         summe[1]=zeit[1];
         summe[2]++;
@@ -214,7 +221,7 @@ void Schachuhr::summenbildung(int *summe, int *zeit){
         summe[1]+=zeit[1];
     }
 
-    if(summe[2]==60)
+    if(summe[2]>=60)
     {
           summe[2]=zeit[2];
           summe[3]++;
